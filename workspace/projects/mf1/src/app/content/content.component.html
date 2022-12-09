@@ -1,1 +1,241 @@
 <h2>Content: mf1 funcionando</h2>
+<div class="card">
+  <!-- Start Card Body -->
+  <div class="card-body">
+    <!-- Start Form -->
+    <form
+      id="bookingForm"
+      action="#"
+      method=""
+      class="needs-validation"
+      novalidate
+      autocomplete="off"
+    >
+      <!-- Start Input Name -->
+      <div class="form-group">
+        <label for="inputName">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputName"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+        <small class="form-text text-muted">Please fill your name</small>
+      </div>
+      <!-- End Input Name -->
+
+      <!-- Start Input Email -->
+      <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="inputEmail"
+          name="email"
+          placeholder="Enter email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+        <small class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+      <!-- End Input Email -->
+
+      <!-- Start Input Telephone -->
+      <div class="form-group">
+        <label for="inputPhone">Phone</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="inputPhone"
+          name="phone"
+          placeholder="099xxxxxxx"
+          pattern="\d{3}\d{3}\d{4}"
+          required
+        />
+        <small class="form-text text-muted"
+          >We'll never share your phone number with anyone else.</small
+        >
+      </div>
+      <!-- End Input Telephone -->
+
+      <!-- Start Input Date , Start Time and End Time -->
+      <div class="form-row">
+        <!-- Start Input Date -->
+        <div class="form-group col-md-4">
+          <label for="inputDate">Date</label>
+          <input
+            type="date"
+            class="form-control"
+            id="inputDate"
+            name="date"
+            required
+          />
+          <small class="form-text text-muted"
+            >Please choose date and time for meeting.</small
+          >
+        </div>
+        <!-- End Input Date -->
+
+        <!-- Start Input Start Time -->
+        <div class="form-group col-md-4">
+          <label>Start Time</label>
+          <div
+            class="d-flex flex-row justify-content-between align-items-center"
+          >
+            <select
+              class="form-control mr-1"
+              id="inputStartTimeHour"
+              name="startHour"
+              required
+            >
+              <option value="" disabled selected>Hour</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+            </select>
+            <div class="pl-1 pr-2">:</div>
+            <select
+              class="form-control"
+              id="inputStartTimeMinute"
+              name="startMinute"
+              required
+            >
+              <option value="" disabled selected>Min</option>
+              <option value="00">00</option>
+              <option value="00">30</option>
+            </select>
+          </div>
+        </div>
+        <!-- End Input Start Time -->
+
+        <!-- Start Input End Time -->
+        <div class="form-group col-md-4">
+          <label>End Time</label>
+          <div
+            class="d-flex flex-row justify-content-between align-items-center"
+          >
+            <select
+              class="form-control mr-1"
+              id="inputEndTimeHour"
+              name="endHour"
+              required
+            >
+              <option value="" disabled selected>Hour</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+            </select>
+            <div class="pl-1 pr-2">:</div>
+            <select
+              class="form-control"
+              id="inputEndTimeMinute"
+              name="endMinute"
+              required
+            >
+              <option value="" disabled selected>Min</option>
+              <option value="00">00</option>
+              <option value="00">30</option>
+            </select>
+          </div>
+        </div>
+        <!-- End Input End Time -->
+      </div>
+      <!-- End Input Date , Start Time and End Time -->
+
+      <!-- Start Check Room Type -->
+      <div class="form-group mt-2">
+        <legend class="col-form-label pt-0">Choose a Room</legend>
+        <div class="form-check form-check-inline">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="inlineRadioType1"
+            name="roomType"
+            value="type1"
+            required
+          />
+          <label class="form-check-label" for="inlineRadioType1"
+            >Room 1 (10 People)</label
+          >
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="inlineRadioType2"
+            name="roomType"
+            value="type2"
+            required
+          />
+          <label class="form-check-label" for="inlineRadioType2"
+            >Room 2 (20 People)</label
+          >
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="inlineRadioType3"
+            name="roomType"
+            value="type3"
+            required
+          />
+          <label class="form-check-label" for="inlineRadioType3"
+            >Room 3 (30 People)</label
+          >
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            type="radio"
+            class="form-check-input"
+            id="inlineRadioType4"
+            name="roomType"
+            value="type4"
+            required
+          />
+          <label class="form-check-label" for="inlineRadioType4"
+            >Room 4 (40 People)</label
+          >
+        </div>
+      </div>
+      <!-- End Check Room Type -->
+
+      <hr />
+
+      <!-- Start Input Remark -->
+      <div class="form-group">
+        <label for="textAreaRemark">Notes</label>
+        <textarea
+          class="form-control"
+          name="remark"
+          id="textAreaRemark"
+          rows="2"
+          placeholder="Tell us you want more..."
+        ></textarea>
+      </div>
+      <!-- End Input Remark -->
+
+      <!-- Start Submit Button -->
+      <button class="btn btn-primary btn-block col-lg-2 mt-3" type="submit">
+        Submit
+      </button>
+      <!-- End Submit Button -->
+    </form>
+    <!-- End Form -->
+  </div>
+  <!-- End Card Body -->
+</div>
